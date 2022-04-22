@@ -1,0 +1,74 @@
+<concole class="log"<input type="text" id="n11" placeholder="INGRESE EL PRIMER NUMERO">
+    <input type="text" id="n22" placeholder="INGRESE EL SEGUNDO NUMERO">
+    <select id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+        
+    <button id="calcular2">Calcular</button> 
+    <output id="r2"></output> 
+    <button id="r">seguir</button> 
+    <select name="seguir" id="op"></select>
+            <option value="si"></option>
+            <option value="no"></option>
+    <script>
+        
+        document.querySelector('#calcular2').addEventListener('click', () =>{
+            const n1 = parseInt(document.querySelector('#n11').value);
+            const n2 = parseInt(document.querySelector('#n22').value);
+            const op2 = document.querySelector('#op').value;
+            let r;
+            if(op2 == '+'){
+                r = n1 + n2;
+            }else if( op2 == '-'){
+                r = n1 - n2;
+            }else if(op2 == '*'){
+                r = n1 * n2;
+            }else if(op2 == '/'){
+                r = n1 / n2;
+            }
+            
+            document.querySelector('#r2').innerHTML = r;
+        });
+    
+    </script>
+    
+></concole>
+<input type="text" id="n11" placeholder="INGRESE EL PRIMER NUMERO">
+<input type="text" id="n22" placeholder="INGRESE EL SEGUNDO NUMERO">
+<select id="op">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+    
+<button id="calcular2">Calcular</button> 
+<output id="r2"></output> 
+<button id="#r2">seguir</button> 
+<select name="seguir" id="op"></select>
+        <option value="si"></option>
+        <option value="no"></option>
+<script>
+    
+    document.querySelector('#calcular2').addEventListener('click', () =>{
+        const n1 = parseInt(document.querySelector('#n11').value);
+        const n2 = parseInt(document.querySelector('#n22').value);
+        const op2 = document.querySelector('#op').value;
+        let r;
+        if(op2 == '+'){
+            r = n1 + n2;
+        }else if( op2 == '-'){
+            r = n1 - n2;
+        }else if(op2 == '*'){
+            r = n1 * n2;
+        }else if(op2 == '/'){
+            r = n1 / n2;
+        }
+        
+        document.querySelector('#r2').innerHTML = r;
+    });
+
+</script>
